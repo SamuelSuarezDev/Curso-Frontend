@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .my-order {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .title {
+        font-size: var(--lg);
+        margin-bottom: 40px;
+      }
+      .my-order-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+      }
+      .my-order-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--text-input-field);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+      }
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+      }
+      .shopping-cart {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 16px;
+        align-items: center;
+        background-color: #acd9b2;
+        padding: 12px;
+      }
+      .shopping-cart:nth-child(odd){
+        background-color: white;
+        color: black;
+      }
+      .shopping-cart figure {
+        margin: 0;
+      }
+      .shopping-cart figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .shopping-cart p:nth-child(3) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-order">
+      <div class="my-order-container">
+        <h1 class="title">My order</h1>
+
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span>01.26.22</span>
+              <span>6 articles</span>
+            </p>
+            <p>$560.00</p>
+          </div>
+
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/w_600,f_auto,q_auto/2aaeb0a5cfb348629897aac0015fec37_9366/Camiseta_Run_It_Blanco_ED9292_01_laydown.jpg"
+                alt="Shirt"
+              />
+            </figure>
+            <p>Camiseta blanca adidas</p>
+            <p>$20,00</p>
+          </div>
+
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/bb7ad0ed0b704768aa34ab2300e21d4c_9366/Guayos_Predator_Mutator_20.1_Terreno_Firme_Blanco_EG1599_09_standard.jpg"
+                alt="guayos"
+              />
+            </figure>
+            <p>Guayos predator mutator 20.1</p>
+            <p>$30,00</p>
+          </div>
+
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/4e5de6a97e8f4d0a98ebacde00d0d0c7_9366/Minibalon_Juventus_Local_Blanco_GT3924_01_standard.jpg"
+                alt="ball"
+              />
+            </figure>
+            <p>Minibalón Juventus</p>
+            <p>$30,00</p>
+          </div>
+        </div>
+           <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/01240d1a8f1444a8ad2fa88d00b61f6e_9366/Canilleras_Everlesto_Negro_CW5562_01_standard.jpg"
+                alt="Shirt"
+              />
+            </figure>
+            <p>Canilleras everlesto</p>
+            <p>$10,00</p>
+          </div>
+
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/ad712866e59740f19a97ab73012fa21d_9366/Camiseta_Titular_Seleccion_Colombia_Amarillo_FT1475_21_model.jpg"
+                alt="guayos"
+              />
+            </figure>
+            <p>Camiseta titular selección Colombia</p>
+            <p>$55,00</p>
+          </div>
+
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/d3f4bdf1f3204db6ba2dab5000f6da2e_9366/Tenis_Galaxy_5_Negro_FW6125_01_standard.jpg"
+                alt="ball"
+              />
+            </figure>
+            <p>Tennis Galaxy 5</p>
+            <p>$5,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
